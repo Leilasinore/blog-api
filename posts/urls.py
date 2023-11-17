@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path("",views.post,name="post")
+    path("articles/",views.articles,name="articles"),
+    path("articles/<int:id>/",views.myarticle,name="myarticle")
 ]
